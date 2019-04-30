@@ -83,21 +83,22 @@ class ViewController: UIViewController ,AVCaptureMetadataOutputObjectsDelegate {
         let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
         
         if metadataObj.type == .qr{
-            let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
-            
-            qrCodeFrameView?.frame = barCodeObject!.bounds
-            
-            if metadataObj.stringValue != nil{
-                let alert = UIAlertController(title: "QRCode", message: metadataObj.stringValue, preferredStyle: .actionSheet)
-                
-                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                    print(action)
-                }
-                
-                alert.addAction(okAction)
-                
-                self.present(alert,animated: true)
-            }
+//            let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
+//
+//            qrCodeFrameView?.frame = barCodeObject!.bounds
+//
+//            if metadataObj.stringValue != nil{
+//                let alert = UIAlertController(title: "QRCode", message: metadataObj.stringValue, preferredStyle: .actionSheet)
+//
+//                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+//                    print(action)
+//                }
+//
+//                alert.addAction(okAction)
+//
+//                self.present(alert,animated: true)
+//            }
+            performSegue(withIdentifier: "ARSegue", sender: self)
         }
     }
 

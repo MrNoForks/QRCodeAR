@@ -12,6 +12,11 @@
 		9B193BC822786DC2002A88EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B193BC622786DC2002A88EA /* Main.storyboard */; };
 		9B193BCA22786DC4002A88EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B193BC922786DC4002A88EA /* Assets.xcassets */; };
 		9B193BCD22786DC4002A88EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B193BCB22786DC4002A88EA /* LaunchScreen.storyboard */; };
+		9B40F73C2278804A00C0E8FE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40F73B2278804A00C0E8FE /* ARViewController.swift */; };
+		9B40F741227883B100C0E8FE /* UFO_A_Normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B40F73E227883B100C0E8FE /* UFO_A_Normal.jpg */; };
+		9B40F742227883B100C0E8FE /* UFO_A_Diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B40F73F227883B100C0E8FE /* UFO_A_Diffuse.jpg */; };
+		9B40F743227883B100C0E8FE /* UFO_A.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9B40F740227883B100C0E8FE /* UFO_A.dae */; };
+		9B40F745227883DC00C0E8FE /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40F744227883DC00C0E8FE /* ModelLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		9B193BC922786DC4002A88EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B193BCC22786DC4002A88EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B193BCE22786DC4002A88EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B40F73B2278804A00C0E8FE /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		9B40F73E227883B100C0E8FE /* UFO_A_Normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UFO_A_Normal.jpg; sourceTree = "<group>"; };
+		9B40F73F227883B100C0E8FE /* UFO_A_Diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UFO_A_Diffuse.jpg; sourceTree = "<group>"; };
+		9B40F740227883B100C0E8FE /* UFO_A.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = UFO_A.dae; sourceTree = "<group>"; };
+		9B40F744227883DC00C0E8FE /* ModelLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +69,22 @@
 				9B193BC622786DC2002A88EA /* Main.storyboard */,
 				9B193BC922786DC4002A88EA /* Assets.xcassets */,
 				9B193BCB22786DC4002A88EA /* LaunchScreen.storyboard */,
+				9B40F73D227883B100C0E8FE /* UFO_A */,
 				9B193BCE22786DC4002A88EA /* Info.plist */,
+				9B40F744227883DC00C0E8FE /* ModelLoader.swift */,
+				9B40F73B2278804A00C0E8FE /* ARViewController.swift */,
 			);
 			path = QRCodeAR;
+			sourceTree = "<group>";
+		};
+		9B40F73D227883B100C0E8FE /* UFO_A */ = {
+			isa = PBXGroup;
+			children = (
+				9B40F73E227883B100C0E8FE /* UFO_A_Normal.jpg */,
+				9B40F73F227883B100C0E8FE /* UFO_A_Diffuse.jpg */,
+				9B40F740227883B100C0E8FE /* UFO_A.dae */,
+			);
+			path = UFO_A;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +145,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B40F742227883B100C0E8FE /* UFO_A_Diffuse.jpg in Resources */,
 				9B193BCD22786DC4002A88EA /* LaunchScreen.storyboard in Resources */,
+				9B40F741227883B100C0E8FE /* UFO_A_Normal.jpg in Resources */,
 				9B193BCA22786DC4002A88EA /* Assets.xcassets in Resources */,
 				9B193BC822786DC2002A88EA /* Main.storyboard in Resources */,
+				9B40F743227883B100C0E8FE /* UFO_A.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B40F745227883DC00C0E8FE /* ModelLoader.swift in Sources */,
+				9B40F73C2278804A00C0E8FE /* ARViewController.swift in Sources */,
 				9B193BC522786DC2002A88EA /* ViewController.swift in Sources */,
 				9B193BC322786DC2002A88EA /* AppDelegate.swift in Sources */,
 			);
